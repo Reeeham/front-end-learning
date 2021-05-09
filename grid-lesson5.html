@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Css Grid</title>
+        <style>
+            body{
+                margin-top: 40px;
+                padding: 0 50px;
+            }
+            .container {
+               background: #333;
+               display: grid;
+               /* grid-template-columns: repeat(auto-fill,minmax(100px,1fr)); */
+               grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+               grid-gap:10px;
+            }
+            .box{
+                background: #00b1b3;
+                padding: 50px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box a">A</div>
+            <div class="box b">B</div>
+            <div class="box c">C</div>
+            <div class="box d">D</div>
+            <div class="box e">E</div>
+         </div>
+    </body>
+</html>

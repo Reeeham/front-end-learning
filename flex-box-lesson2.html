@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Css Grid</title>
+    <style>
+        /* flex container */
+        .container {
+            display: flex;
+            /*main-axis left to right justify-content: space-between; space-between; space-around, center, flex-start, flex-end */
+            /* cross-axis top to bottom align-items: center flex-end  flex-start stretch  baseline; */
+            /* justify-content: center; centerd  horizontally */
+            /* align-content: center; centerd  vertically */
+            align-items: flex-start; /*from top to bottom*/
+            border: 10px solid red;
+            /* flex-direction: column; */
+            /*align-content: flex-start; flex-end, stretch, space-between*/
+            /* flex-wrap: wrap; */
+            height: 100vh;
+        }
+
+        /* flex-item */
+        .box {
+            /* flex:1;
+                order: 1; */
+            /* you can use -1 , -2 */
+            color: white;
+            font-size: 100px;
+            text-align: center;
+            /* padding: 10px; */
+            width: 33.333%;
+
+        }
+
+        .box1 {
+            background: gray;
+            /* flex-grow: 10;
+            flex-shrink: 1;
+            flex-basis: 400px;
+            flex: 10 1 400px; grow shrink basis */
+        }
+
+        .box2 {
+            background: green;
+            padding-bottom: 200px;
+        }
+
+        .box3 {
+            background: greenyellow;
+        }
+
+        .box4 {
+            background: hotpink;
+        }
+
+        .box5 {
+            background: gold;
+        }
+
+        .box6 {
+            background: gainsboro;
+        }
+
+        .box7 {
+            background: forestgreen;
+        }
+
+        .box8 {
+            background: rgb(51, 41, 141);
+        }
+
+        .box9 {
+            background: rgb(153, 216, 245);
+            padding-bottom: 50px;
+            align-self: stretch;
+        }
+
+        .box10 {
+            background: rgb(69, 76, 80);
+        }
+
+        .box3 {
+            /* will go to the end */
+            /* order : 3; */
+            flex: 2;
+        }
+
+        .box7 {
+            /* order:2; */
+            /* flex:3; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box box1">1 🥰</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+        <div class="box box6">6</div>
+        <div class="box box7">7</div>
+        <div class="box box8">8</div>
+        <div class="box box9">9</div>
+        <div class="box box10">10</div>
+
+    </div>
+</body>
+
+</html>
