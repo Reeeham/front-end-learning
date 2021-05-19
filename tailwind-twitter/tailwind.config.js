@@ -16,8 +16,14 @@ module.exports = {
     },
     spacing : {
       112: '28rem',
+      '128' : '32rem',
       20:'5rem'
-    }},
+    }
+  ,width :{ 
+    128: '32rem',
+
+  }
+},
   },
   variants: {
     extend: {},
