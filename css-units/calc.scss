@@ -1,0 +1,94 @@
+/* using calc you can use em, vw and % with px and it's being calculated at render time
+we can embed calc inside calc*/
+
+$header_height: 100px;
+
+div{
+    left: calc(50vh - 100px);
+}
+// body{
+//     font-size: 14px;
+//     font-size: calc(100vw / 75);
+// }
+.main{
+    height: calc(100% - #{$header_height});
+}
+
+/* fixed layout element */
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 260px;
+    background: #565656;
+}
+
+.content {
+    background: #f1f1f1;
+    width: calc(100% - 260px);
+}
+.main{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: calc(50% - 200px / 2 );
+    left: calc(50% - 200px / 2 );
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+@import 'bourbon';
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Open+Sans:400,700,300);
+
+body {
+   @include linear-gradient(45deg, #78485F 0%, #47324C 100%);
+}
+
+.container {
+    background: #fff;
+    padding: 6vw 10vw;
+    max-width: 60vw;
+    margin: 50px auto;
+    box-shadow: 0 0 30px rgba(0,0,0,.2);
+    font-family: 'Open Sans', sans-serif;
+ 
+    h1 {
+       font-family: 'Playfair Display';
+       font-size:24px;
+       font-weight: 300;
+       margin-top: 0;
+       
+       @media (min-width: 992px) {
+
+          font-size: calc(100vw / 20);
+
+       }
+    }
+ 
+    p {
+       font-wight: 300;
+       font-size: 14px;
+       line-height: 1.6em;
+       color: #555;
+       @media (min-width: 992px) {
+          font-size: calc(100vw / 75);
+       }
+    }
+ }
+
+ /**  background positioning using calc*/
+
+ .div1{
+     background-image: url(logo.png);
+    //  background-position: calc(100% - 20px) calc(100% - 20px);
+     background-position: right 20px bottom 20px;
+ }

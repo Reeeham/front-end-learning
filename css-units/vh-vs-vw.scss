@@ -1,0 +1,71 @@
+/**
+They allow to size elements and font sizes as a percentage of 
+the total width or height of the user’s screen (the viewport).
+50vh means it will has 50% os screen view port height
+**/
+/* viewport units are always a percentage of the total size of the viewport, 
+while a percentage value applied on an element is a percentage of the element’s parent,
+ not necessarily the whole viewport.*/
+
+ /** vmin we size as a percentage of the smallest between the width or the height of the viewport */
+ /** vmax we size as a percentage of the largest between the width or the height of the viewport */
+ /** if our  viewport is 1440px wide and 800px tall 50vmin will be 400px 50vmax will be 740px */
+ html, body {
+    overflow-x:hidden;
+  }
+  h1 {
+    font-size: 5vmax; /*5%*/
+    text-align: center;
+    opacity: 0.6;
+  }
+.hero{
+    height: calc(100vh - 3rem);
+    background: linear-gradient(45deg, #DA4453, #89216B);;
+}
+
+.sub-hero{
+    height: 25vh;
+    background: (115deg, #4e54c8, #8f94fb);
+}
+
+.hero,.sub-hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    position: relative;
+    left:50%;
+    margin-left: -50vw;
+}
+
+.wrapper {
+    width: 400px;
+    border: 5px solid rebeccapurple;
+  }
+  
+  .px {
+    width: 200px;
+  }
+  
+  .percent {
+    width: 40%;
+  }
+      
+
+  .gradient {
+    background-image: linear-gradient(90deg, rgba(119,0,255,1) 39%, rgba(0,212,255,1) 100%);
+  }
+
+  .box {
+    height: 300px;
+    width: 400px;
+    background-image: url(star.png);
+    background-repeat: no-repeat;
+    background-position: right 40px;
+  }
+
+  .box::after {
+    content: "This is a string. I know because it is quoted in the CSS."
+  }
+      

@@ -1,0 +1,54 @@
+/* using calc you can use em, vw and % with px and it's being calculated at render time
+we can embed calc inside calc*/
+div {
+  left: calc(50vh - 100px);
+}
+
+body {
+  font-size: 14px;
+  font-size: calc(100vw / 75);
+}
+
+.main {
+  height: calc(100% - 100px);
+}
+
+/* fixed layout element */
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 260px;
+  background: #565656;
+}
+
+.content {
+  background: #f1f1f1;
+  width: calc(100% - 260px);
+}
+
+.main {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: calc(50% - 200px / 2);
+  left: calc(50% - 200px / 2);
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=calc.css.map */
