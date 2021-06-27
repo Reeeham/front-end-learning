@@ -1,0 +1,52 @@
+body{
+    background-color: #a7dbe3;
+    color: white;
+    font-size: 21px;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1{
+    font-size: 70px;
+    color: #3747b3;
+}
+
+p { 
+    color: #2f4c5c;
+}
+
+.box{
+    background: pink;
+    width:300px;
+    margin: 100px;
+    padding: 100px;
+    padding-top: 25px;
+    padding-left: 50px;
+    padding-right: 100px;
+    padding-bottom: 300px;
+    border-left-width:5px;
+    border-left-color:red;
+    border-left-style:solid;
+    border-right-width:5px;
+    border-right-color:green;
+    border-right-style:solid;
+    /* border: 5px solid red;
+    border-left: 5px solid green; order matters to make the override */
+    /* border-style:groove */
+    /* border-right : 1px solid red */
+    /* border-left : 1px solid red */
+    /* border-top : 1px solid red */
+    /* border-bottom : 1px solid red */
+    /* border-bottom-width : 1px */
+    border-top-right-radius: 5px;
+    /* box-sizing: content-box; additive design*/
+    box-sizing: border-box; /*by specified width*/
+    /* box-sizing: padding-box;a padding of 20 pixels around every side, the actual width will remain 300 pixels. As any padding values increase, the content size within an element shrinks proportionately. */
+}
+/* According to the box model, the total width of an element can be calculated using the following formula: */
