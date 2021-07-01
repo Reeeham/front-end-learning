@@ -7,6 +7,11 @@ $clr-red: #c31;
 $clr-black: rgba(black, 1);
 $clr-gray: rgba(black, .7);
 
+// pseudo elements :: pseudo classes :
+// a pseudo element universally without targeting any element 
+// :before {
+//     content : "#";
+// }
 *, *::before, *::after { box-sizing: border-box }
 
 body {
@@ -172,3 +177,47 @@ blockquote {
   width: 100%;
   bottom: 1em;
 }
+
+// @media print { 
+//     a[href]:after { 
+//         content : " (" attr(href) ") ";
+//     }
+// }
+
+
+//rather than insert extra non-semantic markup to clear the float on 
+//container elements we can use a pseudo elements ,we can use a pseudo element to do that for us 
+//commonly known as the clearfix 
+
+// .group:before,
+// .group:after{
+//     content : "";
+//     display: table; 
+// }
+// .group:after {
+//     clear: both;
+// }
+
+// .group {
+//     zoom:1;
+// }
+
+
+// body:before, body:after {
+//     content: "";
+//     position: fixed;
+//     background: #900;
+//     left: 0;
+//     right: 0;
+//     height: 10px;
+//   }
+//   body:before {
+//     top: 0;
+//   }
+//   body:after {
+//     bottom: 0;
+//   }
+//   body {
+//     border-left: 10px solid #900;
+//     border-right: 10px solid #900;
+//   }
